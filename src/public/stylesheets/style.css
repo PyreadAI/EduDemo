@@ -43,6 +43,12 @@ a:hover{
     /* color: #589777; */
     color:purple;
 }
+.glyphicon-chevron-left::before {
+    opacity: 0;
+}
+.glyphicon-chevron-right::before {
+    opacity: 0;
+}
 .navbar-container{
     padding-right: 0px;
 }
