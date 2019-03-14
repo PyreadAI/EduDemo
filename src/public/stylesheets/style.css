@@ -49,29 +49,28 @@ a:hover{
 .glyphicon-chevron-right::before {
     opacity: 0;
 }
-.navbar-container{
-    padding-right: 0px;
-}
+
 .buttons{
     display: flex;
     float: right;
     height: 60px;
     width: 66%;
-    background-color: purple;
+    background-color: white;
     letter-spacing: 1px;
 }
 .buttons .button1{
     margin: 0.2vw;
 }
-.navbar-container{
+/* .navbar-container{
     border-bottom: 1px solid purple;
     border-left: 1px solid purple;
-}
+    border-right: 1px solid purple;
+} */
 .button1{
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     background-color: transparent;
     border: none;
-    color: white;
+    color: purple;
     flex-basis: 16%;
     padding: 0px 1vw;
     text-align: center;
@@ -88,7 +87,7 @@ a:hover{
 }
 .button1:hover:after{
     width: 100%;
-    background:white;
+    background:purple;
     
 }
 .button1:after{
@@ -144,7 +143,7 @@ a:hover{
     text-align: center;
     border: none;
     font-size: 0.8em;
-    color: white;
+    color: purple;
     padding-left: 0.6vw;
     padding-right: 0.6vw;
 }
@@ -226,7 +225,7 @@ a:hover{
     background-color: white;
 }
 #main-page-carousel {
-    height: 33vh;
+    height: 42vh;
 }
 #main-page-carousel .carousel-control {
     background-image: none;
@@ -239,7 +238,7 @@ a:hover{
     width: 100%;
 }
 #main-page-carousel .carousel-inner > .item > img {
-    max-height: 100%;
+    height: 100%;
     width: 100%;
 }
 #main-page-selectors{
@@ -253,10 +252,23 @@ a:hover{
     /* border: 1px #000 solid; */
     /* background-color: #EBEBEB; */
     flex-direction: row;
+    color: white;
+    /* background-color: purple; */
 }
-/* #main-page-selectors a{
-    color: purple;
-} */
+ol.carousel-indicators li {
+    background: rgb(212, 137, 212);
+    margin-top: 2vh;
+}
+ol.carousel-indicators li.active {
+background: purple;
+margin-top: 2vh;
+}
+.carousel-indicators{
+    bottom: 0;
+}
+#main-page-selectors a{
+    color: white;
+}
 
 /* #main-page-selectors-container{
     width: 100%;
@@ -302,15 +314,27 @@ a:hover{
 #selector-course{
     border-left: 2px solid purple;
     border-right: 2px solid purple;
+    /* color:white; */
+    background-color: purple;
 }
-
+#selector-plan{
+    border-left: 2px solid purple;
+    border-right: 2px solid purple;
+    /* color:white; */
+    background-color: purple;
+}
+#selector-camp{
+    background-color: purple;
+}
 #selector-lecture{
     border-left: 2px solid purple;
     border-right: 2px solid purple;
+    background-color: purple;
 }
 #selector-program{
     border-left: 2px solid purple;
     border-right: 2px solid purple;
+    background-color: purple;
 }
 .main-page-selector a{
     vertical-align: middle;
@@ -336,11 +360,11 @@ a:hover{
     margin-top: 0.5em
 }
 .primary-background {
-    border: 4px solid purple;
+    /* border: 4px solid purple; */
 }
 #news-container{
     border: 1px solid purple;
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
     margin-right: 3vw;
     text-align: center;
     display: flex;
@@ -355,7 +379,7 @@ a:hover{
 
 }
 .grey-background {
-    background-color: #EBEBEB;
+    background-color: rgb(212, 137, 212);
     height: 20vh;
     display: flex;
     align-items: center;
@@ -377,7 +401,7 @@ a:hover{
     flex-direction: column;
     /* margin-top: 2.5vh; */
     vertical-align: center;
-    border: 4px solid rgb(212, 137, 212);
+    border: 4px solid white;
     border-radius: 6px;
     margin-left: 7%;
     margin-right: 7%;
@@ -392,10 +416,10 @@ a:hover{
 }
 .icon-content{
     height: 66%;
-    border-top: 2px solid rgb(212, 137, 212);
-    border-bottom: 2px solid rgb(212, 137, 212);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     width: 100%;
-    background-color: rgb(212, 137, 212);
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -405,7 +429,7 @@ a:hover{
 .icon-line{
     height: 50%;
     width: 60%;
-    border-bottom: 2px solid rgb(212, 137, 212);
+    border-bottom: 2px solid white;
 }
 #icon-first{
     max-width: 66%;
@@ -438,13 +462,13 @@ a:hover{
 .options-title{
     max-width: 69%;
     font-size: 1em + 2vw;
-    color: black;
+    /* color: black; */
     letter-spacing: 0.06em;
     font-weight: bolder;
-    color: purple;
+    color: white;
 }
 .options-intro{
-    color: black;
+    color: white;
     font-size: 0.75em;
     max-height: 40%;
     text-align: left;
