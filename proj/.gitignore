@@ -1,0 +1,17 @@
+.awcache
+.data
+*.js
+*.js.map
+/node_modules/
+.idea/
+.DS_Store
+.vscode/
+*.js
+*.js.map
+.pm2/
+*.dmp
+yarn-error.log
+npm-debug.log
+!dev.config.js
+!staging.config.js
+.env
